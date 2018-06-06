@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static', 'css/MaterialDesign-Webfont-master/css/materialdesignicons.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','css/MaterialDesign-Webfont-master/css/stylee.css')}}"/>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+      <div class="col"></div>
+      <div class="col-md-6">
+
+       <div class="page-header">
+         <h1 style="text-align: center"><i>Sign-Up Form</i></h1>
+       </div>
+
+
+         <div class="signup">
+             <form action="{{=URL('store')}}"  method="post" class="form">
+             <div class="form-group">
+               <span class="mdi mdi-account"></span>
+               <input class="form-control" type="text" placeholder="Student name" name="studentname">
+              </div>
+             <div class="form-group">
+                <span class="mdi mdi-clipboard-text"></span>
+                <input class="form-control" type="text" placeholder="Student ID " name="id">
+              </div>
+             <div class="form-group">
+                <span class="mdi mdi-comment-text"></span>
+                <input  class="form-control" type="text"  placeholder="Your E-mail" name="email">
+              </div>
+             <div class="form-group">
+               <span class="mdi mdi-folder-lock"></span>
+               <input class="form-control" type="password"  placeholder="Your Password" name="password">
+              </div>
+             <button  type="submit"  value="Save User" class="btn btn-primary">Submit</button>
+            </form>
+           <a href="{{=URL('seeUsers()')}}">Click me to see user info</a>
+           <a href="{{=URL('login()')}}" style="float: right;">Login</a> 
+          </div>
+
+       </div>
+      <div class="col"></div>
+  </div> 
+ </div>
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
