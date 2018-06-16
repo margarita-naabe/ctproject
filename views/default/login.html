@@ -23,14 +23,14 @@
         <div class="login">
           <form action="{{=URL('authenticate')}}"  method="post" class="form">
             <div class="form-group">
-              <span class="mdi mdi-comment-text"></span>
+              <span class="input-group-addon"><span class="mdi mdi-email"></span></span>
               <input  class="form-control" type="text"  placeholder="Your E-mail" name="email">
             </div>
             <div class="form-group">
-              <span class="mdi mdi-folder-lock"></span>
+              <span class="input-group-addon"><span class="mdi mdi-folder-lock"></span></span>
               <input class="form-control" type="password"  placeholder="Your Password">
             </div>
-            <button  type="submit"  value="Login" class="btn btn-primary">Login</button>
+            <button  type="submit"  value="Login" class="btn btn-primary" style="text-align: center";>Login</button>
           </form>
           <a href="{{=URL('seeUsers()')}}">Click me to see user info</a> 
         </div>

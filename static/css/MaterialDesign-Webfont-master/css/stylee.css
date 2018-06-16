@@ -1,9 +1,13 @@
-.signup {
-	margin-top: 70px;
+.container {
+	margin-top: 30px;
 	border: 1px solid #eee;
-	padding: 30px;
-	background-color: gray;
+	padding: 10px;
+	background-image: url("static/images/hp.jpg");
+	background-repeat:no-repeat;
 }
 .page-header{
 	margin-top:50px;
+}
+.btn btn-primary{
+	border-radius: 50%
 }

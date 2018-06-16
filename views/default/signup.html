@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{=URL('static', 'css/MaterialDesign-Webfont-master/css/materialdesignicons.min.css')}}"/>
     <link rel="stylesheet" href="{{=URL('static','css/MaterialDesign-Webfont-master/css/stylee.css')}}"/>
 </head>
-<body>
+<body background="{{=URL('static','images/hp.jpg')}}">
 
 <div class="container">
   <div class="row">
@@ -19,24 +19,22 @@
        <div class="page-header">
          <h1 style="text-align: center"><i>Sign-Up Form</i></h1>
        </div>
-
-
          <div class="signup">
              <form action="{{=URL('store')}}"  method="post" class="form">
              <div class="form-group">
-               <span class="mdi mdi-account"></span>
+               <span class="input-group-addon"><span class="mdi mdi-account"></span></span>
                <input class="form-control" type="text" placeholder="Student name" name="studentname">
               </div>
              <div class="form-group">
-                <span class="mdi mdi-clipboard-text"></span>
+                <span class="input-group-addon"><span class="mdi mdi-clipboard-text"></span>
                 <input class="form-control" type="text" placeholder="Student ID " name="id">
               </div>
              <div class="form-group">
-                <span class="mdi mdi-comment-text"></span>
+                <span class="input-group-addon"><span class="mdi mdi-email"></span></span>
                 <input  class="form-control" type="text"  placeholder="Your E-mail" name="email">
               </div>
              <div class="form-group">
-               <span class="mdi mdi-folder-lock"></span>
+               <span class="input-group-addon"><span class="mdi mdi-folder-lock"></span></span>
                <input class="form-control" type="password"  placeholder="Your Password" name="password">
               </div>
              <button  type="submit"  value="Save User" class="btn btn-primary">Submit</button>
@@ -44,7 +42,6 @@
            <a href="{{=URL('seeUsers()')}}">Click me to see user info</a>
            <a href="{{=URL('login()')}}" style="float: right;">Login</a> 
           </div>
-
        </div>
       <div class="col"></div>
   </div> 
