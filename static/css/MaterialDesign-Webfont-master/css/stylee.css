@@ -1,13 +1,14 @@
-.container {
-	margin-top: 30px;
-	border: 1px solid #eee;
+.container{
+	margin-top: 50px;
 	padding: 10px;
-	background-image: url("static/images/hp.jpg");
-	background-repeat:no-repeat;
+	background-repeat: no-repeat;
 }
 .page-header{
 	margin-top:50px;
+	color: blue;
 }
-.btn btn-primary{
-	border-radius: 50%
+.xox{
+	border-radius: 50%;
+	text-align: center;
+
 }
