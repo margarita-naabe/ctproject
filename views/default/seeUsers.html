@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="{{=URL('static','css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" href="{{=URL('static', 'css/MaterialDesign-Webfont-master/css/materialdesignicons.min.css')}}"/>
 </head>
-<body>  
-	    {{if users:}}
-               {{for user in users:}}
+<body>  {{if users:}}
+                   {{for user in users:}}
         <div class="container">
          <div class="row">
            <div class="col"></div>
@@ -25,7 +24,7 @@
                 <th scope="col">Password</th>
                </tr>
               </thead> 
-              <tbody> 
+              <tbody>
                <tr>
 	               <td>{{=user.db_studentname}}</td>
 	               <td>{{=user.db_id}}</td>
@@ -38,8 +37,7 @@
        		{{pass}}
               </tbody>
              </table> 
-            </div>
-         
+            </div>        
 </body>
 </html> 
 
